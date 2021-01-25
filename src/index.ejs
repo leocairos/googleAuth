@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login with Google</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<% if (!user.id) { %>
+
+		<h1>Welcome!</h1>
+		<p><a href="<%= url %>">Login with Google</a></p>
+
+		<% } else { %>
+			<h1>Hello, <%= user.given_name %>
+			</h1>
+
+			<p><a href="/logout">Logout</a></p>
+			<p>
+				<%= JSON.stringify(user) %>
+			</p>
+			<% } %>
+
+</body>
+
+</html>
