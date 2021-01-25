@@ -1,16 +1,16 @@
 
-You may need a CLIENT_ID, CLIENT_SECRET and REDIRECT_URL. 
 
--> Set in .env file
+To start, you’ll need to create a new Google project.
 
-You can find these pieces of information by going to the Developer Console:
+* Go to the Google developer console: https://console.developers.google.com/apis/credentials
+* Select or create a Google project.
+* Navigate to the credentials page — in the left sidebar — and create an OAuth client ID.
+* Copy the client id and client secret to be used later.
+* Navigate to the OAuth consent screen panel of the credentials area.
+* Add your domain to the Authorized domains section (GOOGLE_URL_REDIRECT specified in .env).
 
--> clicking your project --> APIs & auth --> credentials.
+* Update .env file
 
-Navigate to the Cloud Console and Create a new OAuth2 Client Id
+* Install modules
 
-Select Web Application for the application type
-
-Add an authorized redirect URI with the value http://localhost:3000/oauth2callback (or applicable value for your scenario)
-
-Click Create, and Ok on the following screen
+* Initialize te project
